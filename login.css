@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(231, 215, 188, 0.485);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.ptitle {
+  margin-top: 20px;
+  font-size: 40px;
+  color: #f5ac03e2;
+  text-align: center;
+}
+
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 4px);
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+input:focus {
+  border-color: #dbb734;     /* Màu viền khi focus */
+  outline: none;             /* Tắt viền mặc định của trình duyệt */
+  box-shadow: 0 0 5px #a25c1a; /* Thêm đổ bóng đẹp hơn */
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #BF9264;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: #86582ad2;
+  transition: 0.5s;
+}
+
+.helper-links {
+  margin-top: 5px;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.helper-links a {
+  color: #f5ac03e2;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.separator {
+  color: #f5ac03e2;
+}
+
+.helper-links a:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+p[style*="color:red"] {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .helper-links {
+      flex-direction: column;
+      gap: 2px;
+  }
+  .separator {
+      display: none;
+  }
+}
