@@ -22,3 +22,5 @@ Username: AvgUser
 Email: averageuser@gmail.com
 Password: password
 Password for the locked note of AvgUser: locked
+
+Demo video: https://youtu.be/jJxX6SC6KAg
